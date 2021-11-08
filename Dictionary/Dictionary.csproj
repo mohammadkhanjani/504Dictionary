@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD415D1-0EB3-4D2B-8AA3-DF9265041A39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dictionary</RootNamespace>
+    <AssemblyName>Dictionary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>accessibilitycpl.dll_I0146_0409_MRT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\Program Files\DotNetBar\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="GlassButton">
+      <HintPath>..\..\..\..\..\..\..\dll----csharp\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SpeechLib">
+      <HintPath>..\..\..\..\..\..\..\dll----csharp\Interop.SpeechLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\..\..\..\..\dll----csharp\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TxtProNetV3">
+      <HintPath>..\..\..\..\..\..\..\dll----csharp\textbox\TxtProNetV3.dll</HintPath>
+    </Reference>
+    <Reference Include="VistaClockProject">
+      <HintPath>..\..\..\..\..\..\..\dll----csharp\VistaClockProject.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Debug\Database11DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database11DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database11DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database11DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database11DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database11DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database11DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Database11DataSet1.xsc">
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\Database11DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Database11DataSet1.xss">
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\Dictionary.exe.config" />
+    <None Include="bin\Debug\Dictionary.vshost.exe.config" />
+    <None Include="bin\Debug\Dictionary.vshost.exe.manifest" />
+    <None Include="bin\Debug\Skin\a %281%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2810%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2811%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2812%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2813%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2814%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2815%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2816%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2817%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2818%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2819%29.ssk" />
+    <None Include="bin\Debug\Skin\a %282%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2820%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2821%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2822%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2823%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2824%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2825%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2826%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2827%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2828%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2829%29.ssk" />
+    <None Include="bin\Debug\Skin\a %283%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2830%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2831%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2832%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2833%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2834%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2835%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2836%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2837%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2838%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2839%29.ssk" />
+    <None Include="bin\Debug\Skin\a %284%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2840%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2841%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2842%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2843%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2844%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2845%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2846%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2847%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2848%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2849%29.ssk" />
+    <None Include="bin\Debug\Skin\a %285%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2850%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2851%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2852%29.ssk" />
+    <None Include="bin\Debug\Skin\a %2853%29.ssk" />
+    <None Include="bin\Debug\Skin\a %286%29.ssk" />
+    <None Include="bin\Debug\Skin\a %287%29.ssk" />
+    <None Include="bin\Debug\Skin\a %288%29.ssk" />
+    <None Include="bin\Debug\Skin\a %289%29.ssk" />
+    <None Include="bin\Debug\Skin\a%280%29" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Database11DataSet.xsc">
+      <DependentUpon>Database11DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database11DataSet.xss">
+      <DependentUpon>Database11DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet1.xsc">
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database11DataSet1.xss">
+      <DependentUpon>Database11DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet2.xsc">
+      <DependentUpon>Database11DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database11DataSet2.xss">
+      <DependentUpon>Database11DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet3.xsc">
+      <DependentUpon>Database11DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database11DataSet3.xss">
+      <DependentUpon>Database11DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet4.xsc">
+      <DependentUpon>Database11DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Database11DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database11DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database11DataSet4.xss">
+      <DependentUpon>Database11DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accessibilitycpl.dll_I0146_0409_MRT.ico" />
+    <Content Include="bin\Debug\Database11.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Dictionary.exe" />
+    <Content Include="bin\Debug\Dictionary.pdb" />
+    <Content Include="bin\Debug\Dictionary.vshost.exe" />
+    <Content Include="bin\Debug\GlassButton.dll" />
+    <Content Include="bin\Debug\Interop.SpeechLib.dll" />
+    <Content Include="bin\Debug\IrisSkin2.dll" />
+    <Content Include="bin\Debug\VistaClockProject.dll" />
+    <Content Include="Database11.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="text_256_256.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
